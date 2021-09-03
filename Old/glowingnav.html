@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glowing Navigation bar</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            display: flex;
+
+        }
+        .navbar{
+            display: flex;
+            align-content: center;
+            justify-items: center;
+            border: 2px solid red;
+            background-color: black;
+
+        }
+        .navbar ul{
+            overflow: auto;
+        }
+        .navbar ul li a{
+            text-decoration: none;
+            position: relative;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <ul>
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">MEN</a></li>
+                <li><a href="#">WOMEN</a></li>
+                <li><a href="#">CHILDREN</a></li>
+            </ul>
+        </div>
+    </header>
+</body>
+</html>

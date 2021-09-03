@@ -1,0 +1,331 @@
+* {
+  box-sizing: border-box;
+  margin: 0%;
+  padding: 0%;
+}
+body {
+  font-family: "Fira Sans", sans-serif;
+}
+/* navigation bar */
+.navbar {
+  display: flex;
+  flex-direction: row;
+  background-color: white;
+}
+.navlink {
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+.navlink li {
+  float: left;
+  margin: 20px;
+  list-style: none;
+}
+.navlink li a {
+  text-decoration: none;
+  font-size: 30px;
+  color: black;
+  margin: 20px;
+}
+.navlink li a:hover {
+  background-color: gray;
+  border-radius: 5px;
+}
+.logo-img {
+  height: 100px;
+  width: 100px;
+}
+.logo {
+  margin-left: 40px;
+  margin-top: 15px;
+}
+.toggle {
+  height: 50px;
+  width: 50px;
+  position: absolute;
+  top: 40px;
+  right: 50px;
+  border: 2px solid black;
+  display: none;
+  flex-direction: column;
+  justify-content: space-evenly;
+  border-radius: 5px;
+}
+.bar {
+  height: 5px;
+  width: 100%;
+  border-radius: 10px;
+  background-color: black;
+}
+
+@media screen and (max-width: 768px) {
+  .toggle {
+    display: flex;
+  }
+  .navlink {
+    display: none;
+  }
+  .media {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left: 30%;
+    top: 15%;
+  }
+  .media li {
+    float: inherit;
+    margin: 35px;
+  }
+}
+
+/* landing page */
+
+.bgimg {
+  height: 80%;
+  width: 100%;
+}
+.landinghead {
+  position: absolute;
+  top: 400px;
+  left: 75px;
+  font-size: 3.2552083333333335vw;
+  font-weight: bold;
+  line-height: 6.510416666666667vw;
+  letter-spacing: 0.1953125vw;
+  font-family: "Atkinson Hyperlegible", sans-serif;
+}
+.shopnow {
+  position: absolute;
+  top: 650px;
+  left: 75px;
+  height: 50px;
+  width: 200px;
+  background-color: #ffff99;
+  text-align: center;
+  justify-content: center;
+  border-radius: 5px;
+}
+.shopnow a {
+  font-size: 1.953125vw;
+  font-weight: bold;
+  text-decoration: none;
+  color: black;
+  position: relative;
+  top: 7px;
+}
+
+@media screen and (max-width: 768px) {
+  .landinghead {
+    position: absolute;
+    top: 100px;
+    left: 25px;
+  }
+  .shopnow {
+    position: absolute;
+    top: 200px;
+    left: 25px;
+    height: 25px;
+    width: 100px;
+  }
+  .shopnow a {
+    position: relative;
+    top: 2px;
+  }
+  .mainpage {
+    position: absolute;
+  }
+}
+
+/* shopping page */
+.head-shop {
+  font-size: 50px;
+  font-weight: bold;
+  margin: 20px;
+  margin-left: 125px;
+}
+.parts {
+  /* display: grid;
+  grid-template-columns: auto auto auto auto; */
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 20px;
+  position: relative;
+}
+.group {
+  height: 300px;
+  width: 300px;
+  margin: 20px;
+  border-radius: 10px;
+  text-align: center;
+  margin-left: auto;
+  margin-top: auto;
+}
+.headinggroup {
+  font-size: 30px;
+  font-weight: bolder;
+  vertical-align: middle;
+  position: relative;
+  top: 125px;
+  color: #e6e654;
+}
+.shirts {
+  background-image: url(resorces/shirts.jpg);
+  background-size: cover;
+}
+.jeans {
+  background-image: url(resorces/jeans.jpg);
+  background-size: cover;
+}
+.indianwear {
+  background-image: url(resorces/kurta\ male.jpg);
+  background-size: cover;
+}
+.mens {
+  background-image: url(resorces/men\ undergarments.jpg);
+  background-size: cover;
+}
+.sarees {
+  background-image: url(resorces/sarees.jpg);
+  background-size: cover;
+}
+.kurta {
+  background-image: url(resorces/kutya\ female.jpg);
+  background-size: cover;
+}
+.indianwomen {
+  background-image: url(resorces/dress\ material.jpg);
+  background-size: cover;
+}
+.women {
+  background-image: url(resorces/undergarments.jpg);
+  background-size: cover;
+}
+
+@media screen and (max-width: 768px) {
+  .parts {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    top: 325px;
+    margin: 50px;
+  }
+  .head-shop {
+    position: relative;
+    top: 325px;
+  }
+}
+
+/* ABOUT US */
+.about {
+  display: flex;
+  flex-direction: row;
+}
+.about-head {
+  font-size: 50px;
+  font-weight: bold;
+  margin: 20px;
+  margin-left: 125px;
+}
+.about-img {
+  margin: 10px;
+  margin-left: 120px;
+  border-radius: 20px;
+}
+.about-img img {
+  border-radius: 20px;
+  height: 400px;
+  width: 400px;
+}
+.info {
+  font-size: 30px;
+  margin: 20px 20px 20px 50px;
+  letter-spacing: 3px;
+  line-height: 50px;
+}
+
+@media screen and (max-width: 768px) {
+  .about {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: 400px;
+  }
+  .about-head {
+    position: relative;
+    top: 350px;
+  }
+  .about-img {
+    margin: 50px;
+  }
+}
+
+/* footer */
+.footer {
+  display: flex;
+  flex-direction: row;
+}
+.mapouter {
+  position: relative;
+  text-align: right;
+  width: 600px;
+  height: 400px;
+  margin: 30px;
+  margin-top: 50px;
+  margin-left: 125px;
+  border-radius: 10px;
+}
+.gmap_canvas {
+  overflow: hidden;
+  background: none !important;
+  width: 600px;
+  height: 400px;
+}
+.gmap_iframe {
+  width: 600px !important;
+  height: 400px !important;
+}
+.footercontent {
+  display: flex;
+  flex-direction: column;
+  margin: 50px;
+}
+.footerhead {
+  font-size: 30px;
+  font-weight: bold;
+}
+.socail-media {
+  display: flex;
+  flex-direction: row;
+  margin-top: 20px;
+  padding: 20px;
+  background-color: white;
+}
+.so img {
+  height: 100px;
+  width: 100px;
+  margin: 10px;
+  background-color: white;
+}
+@media screen and (max-width: 768px) {
+  .footer {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: 400px;
+  }
+  .socail-media {
+    display: flex;
+    flex-direction: column;
+  }
+  .mapouter {
+    margin: 30px;
+    margin-left: 30px;
+    height: 200px;
+    width: 200px;
+  }
+}
